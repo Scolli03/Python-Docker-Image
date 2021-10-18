@@ -21,7 +21,6 @@ RUN groupadd --gid $USER_GID $USERNAME \
 # [Optional] Set the default user. Omit if you want to keep the default as root.
 USER $USERNAME
 
-WORKDIR /bjones
-ADD /src/requirements.txt /bjones/src/requirments.txt
-
+WORKDIR /project
+ADD /src/requirements.txt /project/src/requirments.txt
 RUN pip3 install -r /bjones/src/requirments.txt
