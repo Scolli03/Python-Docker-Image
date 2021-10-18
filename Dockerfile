@@ -23,4 +23,4 @@ USER $USERNAME
 
 WORKDIR /project
 ADD /src/requirements.txt /project/src/requirments.txt
-RUN pip3 install -r /bjones/src/requirments.txt
+RUN pip3 install -r /project/src/requirments.txt
